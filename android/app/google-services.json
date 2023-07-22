@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "685485218830",
+    "project_id": "quizzizersy",
+    "storage_bucket": "quizzizersy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685485218830:android:4698b98a57a0ae9880305f",
+        "android_client_info": {
+          "package_name": "io.iberius.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685485218830-4mun81bhqg75pbntb89pqes4kdpshsi9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.iberius.myapp",
+            "certificate_hash": "0f20760814df89dffcd86781223be2822622f9ee"
+          }
+        },
+        {
+          "client_id": "685485218830-jha6p2vhlga6r12fp33seq1505qfj3cm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8J-1cxsQ54dRrgFl1LD_4VIM-VSx0XdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685485218830-jha6p2vhlga6r12fp33seq1505qfj3cm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "685485218830-8d48lmsb88jcom8uuoosduo9b6mqitka.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.iberius.myapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
