@@ -6,7 +6,7 @@ import "package:quizzizersy/home/home.dart";
 
 var appRoutes = {
   "/": (context) => const HomeScreen(),
-  "/topics": (context) => const TopicScreen(),
+  "/topics": (context) => const TopicsScreen(),
   "/about": (context) => const AboutScreen(),
   "/profile": (context) => const ProfileScreen(),
   "/login": (context) => const LoginScreen(),
