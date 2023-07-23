@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quizzizersy/services/firestore.dart';
 import 'package:quizzizersy/services/models.dart';
 import 'package:quizzizersy/shared/shared.dart';
+import 'package:quizzizersy/topics/drawer.dart';
 import 'package:quizzizersy/topics/topic_item.dart';
 
 class TopicsScreen extends StatelessWidget {
@@ -27,6 +27,7 @@ class TopicsScreen extends StatelessWidget {
               backgroundColor: Colors.deepOrange,
               title: const Text('Topics'),
             ),
+            drawer: TopicDrawer(topics: topics),
             body: GridView.count(
               primary: false,
               padding: const EdgeInsets.all(20.0),
