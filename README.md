@@ -1,4 +1,4 @@
-# myapp
+# Quizzersy
 
 A new Flutter project.
 
