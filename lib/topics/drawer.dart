@@ -11,38 +11,38 @@ class TopicDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-        child: ListView.separated(
-            shrinkWrap: true,
-            itemCount: topics.length,
-            itemBuilder: (BuildContext context, int idx) {
-              Topic topic = topics[idx];
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10, left: 10),
-                    child: Text(
-                      topic.title,
-                      // textAlign: TextAlign.left,
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white70,
-                      ),
+      child: ListView.separated(
+          shrinkWrap: true,
+          itemCount: topics.length,
+          itemBuilder: (BuildContext context, int idx) {
+            Topic topic = topics[idx];
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 10, left: 10),
+                  child: Text(
+                    topic.title,
+                    // textAlign: TextAlign.left,
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white70,
                     ),
                   ),
-                  QuizList(topic: topic)
-                ],
-              );
-            },
-            separatorBuilder: (BuildContext context, int idx) =>
-                const Divider()));
+                ),
+                QuizList(topic: topic)
+              ],
+            );
+          },
+          separatorBuilder: (BuildContext context, int idx) => const Divider()),
+    );
   }
 }
 
 class QuizList extends StatelessWidget {
   final Topic topic;
-  const QuizList({Key? key, required this.topic}) : super(key: key);
+  const QuizList({super.key, required this.topic});
 
   @override
   Widget build(BuildContext context) {
@@ -68,12 +68,12 @@ class QuizList extends StatelessWidget {
                 child: ListTile(
                   title: Text(
                     quiz.title,
-                    style: Theme.of(context).textTheme.titleSmall,
+                    style: Theme.of(context).textTheme.headline5,
                   ),
                   subtitle: Text(
                     quiz.description,
                     overflow: TextOverflow.fade,
-                    style: Theme.of(context).textTheme.titleSmall,
+                    style: Theme.of(context).textTheme.subtitle2,
                   ),
                   leading: QuizBadge(topic: topic, quizId: quiz.id),
                 ),
